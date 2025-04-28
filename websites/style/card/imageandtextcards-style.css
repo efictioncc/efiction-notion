@@ -37,7 +37,7 @@
 
 .section-list_ef { 
     display: flex; 
-    gap: 24px; 
+    gap: 16px; 
     justify-content: center; 
 }
 
@@ -49,6 +49,7 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
     max-height: fit-content;
+    word-break: keep-all;
 }
 
 .item_ef:hover { 
