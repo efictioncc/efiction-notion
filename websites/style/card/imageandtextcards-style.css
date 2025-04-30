@@ -87,11 +87,16 @@
     color: #666; 
 }
 
-.item-img_ef { 
-    height: 240px; 
-    background-size: cover; 
-    background-position: center; 
-}
+.item-img_ef {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 12px;
+      background-color: #f2f4f6;
+      transition: background-image 0.3s;
+    }
 
 @media (max-width: 768px) {
     .section-list_ef { 
