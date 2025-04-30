@@ -39,10 +39,16 @@
     display: flex; 
     gap: 16px; 
     justify-content: center; 
+
+  flex-wrap: wrap;
+  gap: 24px; /* 카드 간 간격(옵션) */
 }
 
 .item_ef {
-    flex: 1;
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+    
     max-width: 500px;
     border-radius: 12px;
     overflow: hidden;
@@ -62,6 +68,12 @@
 }
 
 .text-container_ef {
+  /* flex-grow: 1로 텍스트 영역이 남은 공간을 채움 */
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* 텍스트 위쪽 정렬 */
+    
     padding: 24px;
     background: #f8f9fa;
     height: 240px;
