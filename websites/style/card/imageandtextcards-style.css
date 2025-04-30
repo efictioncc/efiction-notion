@@ -92,11 +92,26 @@
 }
 
 .item-img_ef { 
+
+      position: relative;
+  overflow: hidden;
+
+    
     height: 240px; 
     background-size: cover; 
     background-position: center; 
 }
-
+.item-img_ef::after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  background-image: inherit; /* 배경 이미지 상속 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
 @media (max-width: 768px) {
     .section-list_ef { 
         flex-direction: column; 
